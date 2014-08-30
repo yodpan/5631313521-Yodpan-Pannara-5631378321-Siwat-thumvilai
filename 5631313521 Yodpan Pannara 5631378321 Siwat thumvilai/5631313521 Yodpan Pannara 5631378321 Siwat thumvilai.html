@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<head>
+  <title>Benz Vorrachet</title>
+<style>
+  header {
+      background:url(https://scontent-a-nrt.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10498623_10204720096189159_7367838958859673143_o.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      max-width: 1080px;
+      color: white;
+      position: absolute;
+
+  }
+    input[type="search"]{
+      padding: 10px 900px 10px 0px;
+      font-size: 15px;
+  }
+
+    body{
+      font-family: helvetica, sans-serif;
+      margin: 0 auto;
+      max-width: 1020px;
+      background: #FBD5F3;
+  }
+
+  h1{
+      margin : 100px 0 0 0 ;
+      text-align: left;
+  }
+  a {
+      color: #FE72DF;;
+      font-size: 17px;
+      padding: 0px 30px 10px 30px;
+    }
+  a2 {
+    padding: 0px 40px 10px 40px;
+    color: #FE72DF;
+    font-weight: bold;
+  }
+
+  ul { ;
+      padding: 10px;
+      background: #FFF;
+  }
+  li {
+      display: inline;
+
+  }
+  
+  button{
+    padding: 5px 15px 5px 15px;
+  }
+  h4{
+    color: grey;
+    padding: 5px 5px 0 0 ;
+    background: #FF99EA;
+    background-size: cover;
+    max-width:415px;
+    margin: 0px ;
+  }
+
+  p {
+    color: black;
+    background: White;
+    line-height: 18px;
+    text-align: justify;
+    position: absolute;
+    padding: 0 10px 0 0 ;
+
+
+  }
+  greentext {
+    color: #FE72DF;
+    font-weight: bold;
+  }
+  greentext2 {
+    color: #FE72DF;
+  }
+
+  td{
+    background-size: cover;
+    background-position= center;
+    border-radius : 5px;
+    border: .5px solid white;
+    cursor: pointer;  
+  }
+
+  input[name="cover-button"] {
+    margin : 120px 10px 0 10px ;
+    float: right;
+    padding: 5px 15px 5px 15px;
+    font-size:/ 12px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  input[name="like"] {
+    width : 80px;
+    height: 35px;
+    cursor: pointer;
+    border: 0;
+    margin: 0;
+    vertical-align: bottom;
+  }
+  input[name="other-post-button"] {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 20px 8px 20px;
+    border: 1px solid red;
+    background-color: none;
+    color:grey; /* or green #7FB294*/
+    margin: 0 auto;
+  }
+  input[type="comment"] {
+      padding: 5px 340px 10px 0px;
+      font-size: 15px;
+      border-radius: 2px;
+      margin: 0;
+  }
+  input[name="submit-comment"] {
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px 20px 10px 20px;
+      border-radius: 4px;
+      border: 0px;
+      background-color: #BB4FA4;
+      color:white;
+      margin: 0;
+  }
+  .status-box{
+      max-width:603px;
+      display: block;
+      position: absolute;
+      /*padding: 30px 20px 20px 20px*/
+      background: #FF99EA;
+  }
+
+  .status-button {
+      display:inline;
+      padding: 20px right;
+  }
+  input[type="status-bar"] {
+      padding: 5px 425px 100px 0px;
+      font-size: 15px;
+  }
+     
+  input[name="post-button"] {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 20px 8px 20px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: #BB4FA4;
+    color:white;
+  }
+  input[name="other-status-button"] {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 20px 8px 20px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: none;
+    color:grey;
+    margin: 0;
+  }
+
+
+  .all-post-button{
+      display: inline;
+  }
+
+  .profile-pic img{
+      float: left;
+      border: 2px solid white ;
+      border-radius: 5px ;
+      margin: 30px 20px 20px 20px
+  }
+  .about{
+    height: 300px;
+    background-size: cover ;
+    position: relative;
+    border-radius: 4px;
+    max-width:420px;
+    background: white;
+    margin: 0px ;
+    font: justify;
+  }
+  .friends{
+    height: 404px;
+    background-size: cover ;
+    position: relative;
+    border-radius: 4px;
+    max-width:420px;
+    background: white;
+    margin: 0px ;
+  }
+  .photo{
+    height: 410px;
+    background-size: cover ;
+    position: relative;
+    border-radius: 4px;
+    max-width:420px;
+    background: white;
+    margin: 0px ;
+  }
+  .pages{
+    height: 170px;
+    background-size: cover ;
+    position: relative;
+    border-radius: 4px;
+    max-width:420px;
+    background: white;
+    margin: 0px ;
+  }
+    .box1 {
+      max-width:600px;
+      background: white;
+      border: 0;
+  }
+    .box2 {
+      max-width:600px;
+      background: white;
+      border: 0;
+  }  
+ /* @media (max-width: 500px){
+    input[type="search"]{
+      padding: 10px 100px 10px 0px;
+      font-size: 15px;
+    }
+   header {
+      background-size: 480px;
+      background-position: center;
+      color: white;
+      max-width:500px;
+    } 
+  } */
+
+
+</style>
+
+<script>
+function liked()
+{
+alert("Whattt?");
+}
+</script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+
+</head>
+<body>
+  <!--Cover and Profile picture-->
+  <header>
+    <input type="search" placeholder="Search">
+    <div class="cover-button">
+      <input type="submit" name="cover-button" value="View Activity Log">
+      <input type="submit" name="cover-button" value="Update Info">
+    </div>
+    <div class="profile-pic">
+      <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c49.49.618.618/s160x160/935769_137361926465571_2120833748_n.jpg?oh=ab912193b62fe17e7bb734df26e07f6e&oe=5475B0C9&__gda__=1416550685_3a79b88e28b08de08ea99b9591cde483" height="160" width="160"> 
+    </div>
+    <h1>Benz Vorrachet</h1>
+    <ul>
+        <li><a href="#">Timeline</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Photo</a></li>
+        <li><a href="#">Friend</a></li>
+        <li><a href="#">More</a></li>
+    </ul>
+  </header>
+
+  <!--about-->
+  
+  <div style="left:0px;top:270px;position:relative;">
+   
+   <h4> ABOUT</h4>
+    <div class = "about">
+      
+      <p>&nbsp; <b>Studies Information & Communication Engineering <br> &nbsp;  at <greentext>Chulalongkorn University</greentext><br><br>&nbsp; Favorite Quotes <greentext> ‎ดีใช่เป่าวว </greentext><br><br>&nbsp; From <greentext> Bangkok, Thailand </greentext><br><br>&nbsp; Contact information <greentext> benzson.v@gmail.com </greentext> <br><br>&nbsp; Gender <greentext> Male</greentext> <br><br>&nbsp; Languages <greentext>English · Thai</greentext> <br><br>&nbsp; Hobby <greentext> Questioning </greentext></b>
+    </p>
+ 
+    </div> 
+  </div>  
+
+    <!--Status Box-->
+  <div style="left:470px;top:-50px;position:relative;">
+    <div class="status-box">
+      <div class="status-button">
+        <li><a2>Status</a2></li>
+        <li><a2>Photo/Videos</a2></li>
+        <li><a2>Life Event</a2></li>
+      </div>
+      <input type="status-bar" placeholder=" What's on your mind?">
+      <input type="submit" name="other-status-button" value="Tags">
+      <input type="submit" name="other-status-button" value="Location">
+      <input type="submit" name="other-status-button" value="Upload">
+      <input type="submit" name="post-button" value="Post">
+      <input type="checkbox">Friends only<br>
+    </div>
+  </div>
+
+    <!--Friends-->
+  
+  <div style="left:0px;top:300px;position:relative;">
+   
+   <h4> CRUSHING ON <span style="font-weight:normal;">(921 more)</span></h4>
+    <div class = "friends">
+      <table style="width:420px">
+        <tr>
+          <td width= 130 height=130 background="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/c40.0.160.160/p160x160/1013456_10203067149550549_561556980_n.jpg" valign = bottom><FONT SIZE="+1" COLOR="white">Klaijan Sinteppadon</FONT></td>
+          <td width= 130 height=130 background="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/p160x160/1924360_10203697788017760_4580764675901714305_n.jpg?oh=eeb19c716687aeb5a8ac85846b74284e&oe=545BD17C&__gda__=1417654967_dbf6303997fae1acf99f6ae6ce70f0c6" valign = bottom><FONT SIZE="+1" COLOR="white">Mook Phanthila</FONT></td>
+          <td width= 130 height=130 background="https://scontent-b-nrt.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10592888_10152589264287418_4330204267306508786_n.jpg?oh=06038f9273cb82f61a768ab97d7c51b4&oe=546AF2ED" valign = bottom><FONT SIZE="+1" COLOR="white">Sairung Donya</FONT></td>
+        </tr>
+        <tr>
+          <td width= 130 height=130 background="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/p160x160/10421497_10204186045073517_7553856160522886822_n.jpg?oh=247673498404066402b3b6f55d4fa276&oe=546F491D&__gda__=1416997766_4b30d582b6199ca9b8c8bbaa7c4212f8" valign = bottom><FONT SIZE="+1" COLOR="white">Tammy Sirobol</FONT></td>
+          <td width= 130 height=130 background="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/p160x160/10527789_10204584947292714_3586523073068544874_n.jpg" valign = bottom><FONT SI/ZE="+1" COLOR="white">Pinks Ananya</FONT></td>
+          <td width= 130 height=130 background="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p160x160/10309351_10203682622096703_1797522675094391479_n.jpg?oh=e922b43f1ae071133bb407e6f266fb68&oe=546D68AD&__gda__=1417517781_4872313d296f15aec472cddfe7e188b5" valign = bottom><FONT SIZE="+1" COLOR="white">Ping Sukit</FONT></td>
+        </tr>
+        <tr>
+          <td width= 130 height=130 background="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/p160x160/10599260_10202536932683929_7173519636694458636_n.jpg" valign = bottom><FONT SIZE="+1" COLOR="white">June St Adsvrk</FONT></td>
+          <td width= 130 height=130 background="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/p160x160/10407726_10152619880963633_5417411634324615832_n.jpg" valign = bottom><FONT SIZE="+1" COLOR="white">Jeawy Jang</FONT></td>
+          <td width= 130 height=130 background="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t1.0-1/p160x160/1622803_10152345018578982_1804558686_n.jpg" valign = bottom><FONT SIZE="+1" COLOR="white">Nam Thunyathorn</FONT></td>
+        </tr>
+      </table>   
+    </div> 
+  </div>  
+
+    <!--Photos-->
+
+  <div style="left:0px;top:330px;position:relative;">
+   
+   <h4> PHOTO </h4>
+    <div class = "photo">
+      <table style="width:420px">
+        <tr>
+
+          <td width= 130 height=130 background="https://scontent-a-nrt.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10498623_10204720096189159_7367838958859673143_o.jpg" height="130" width="130" >
+            <a href="https://scontent-a-nrt.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10498623_10204720096189159_7367838958859673143_o.jpg" data-lightbox="photos">
+            <img src="" width="100" height="130"></a>
+          </td>
+          <td width= 130 height=130 background="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/1941323_903853322963759_5176644099509736109_o.jpg" >
+            <a href="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/1941323_903853322963759_5176644099509736109_o.jpg"data-lightbox="photos">
+            <img src="" width="100" height="130"></a>
+          </td>
+          <td width= 130 height=130 background="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/p417x417/10570531_903838592965232_3762313762354120649_n.jpg?oh=0ea805988add45b924831014e242c29f&oe=545DC3F2&__gda__=1416346562_e3c34e16f71f808c1b4c59b9c57d6701" >
+            <a href="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/p417x417/10570531_903838592965232_3762313762354120649_n.jpg?oh=0ea805988add45b924831014e242c29f&oe=545DC3F2&__gda__=1416346562_e3c34e16f71f808c1b4c59b9c57d6701"data-lightbox="photos">
+            <img src="" width="100" height="130"></a>
+          </td>
+        </tr>
+        <tr>
+          <td width= 130 height=130 background="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/t1.0-9/p417x417/1920549_818076994874726_2076521202_n.jpg" height="130" width="130" >
+            <a href="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/t1.0-9/p417x417/1920549_818076994874726_2076521202_n.jpg"data-lightbox="photos">
+            <img src="" width="100" height="130"></a>
+          </td>
+          <td width= 130 height=130 background="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn2/t31.0-8/1025324_462381840519119_2037375533_o.jpg" >
+            <a href="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn2/t31.0-8/1025324_462381840519119_2037375533_o.jpg"data-lightbox="photos">
+            <img src="" width="100" height="130"></a>
+          </td>
+          <td width= 130 height=130 background="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/1167105_799014160114343_1994519666_o.jpg" >
+            <a href="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/1167105_799014160114343_1994519666_o.jpg"data-lightbox="photos">
+            <img src="" width="100" height="130"></a>
+          </td>
+        </tr>
+        <tr>
+         <td width= 130 height=130 background="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/p417x417/1554469_818055638210195_1484446220_n.jpg" >
+            <a href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/p417x417/1554469_818055638210195_1484446220_n.jpg"data-lightbox="photos">
+            <img src="" width="100" height="130"></a>
+         </td>
+        </tr>
+        </tr>
+      </table>   
+    </div> 
+  </div>  
+
+  <!--Liked-Pages-->
+  <div style="left:0px;top:360px;position:relative;">
+    <h4> Likes </h4>
+    <div class = "pages">
+       <table style="width:420px">
+        <tr>
+          <td><img src="http://as-cdn-images.deezer.com/images/cover/8bb9938bb8b054b854aeaf44cc9c48cc/250x250-000000-80-0-0.jpg" height="130" width="130"></td> 
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/p160x160/396183_10150487875642746_1349030101_n.jpg" height="130" width="130"></td> 
+          <td><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/p160x160/10606017_589023497875824_4211113163033718663_n.jpg?oh=405dff7eb8f20844a87872590f82bc3f&oe=546B5ABF&__gda__=1417762051_3fe785e15ca35689ff7417e42aab0567" height="130" width="130"></td> 
+        </tr>
+        <tr>
+          <td><greentext2>Taylor Swift</greentext2></td> 
+          <td><greentext2>Referee United</greentext2></td> 
+          <td><greentext2>Taylor Connect</greentext2></td> 
+        </tr>
+        </table>  
+    </div>
+  </div>
+
+
+  <!--Post 1-->
+  <div style="left :475px;top:-900px; position:relative;">
+    <div class = "box1">
+        <img src="https://scontent-a-nrt.xx.fbcdn.net/hphotos-xap1/t31.0-8/10001249_645407782163121_746711185_o.jpg" height="400" width="603">
+        <p>'Cause you're amazing. Just the way you are. with <greentext2>Klaijan Sinteppadon </greentext2></p><br><br><br>
+    <div class="all-post-button" >
+      <input type="image" name="like" value="Like" src="http://i.imgur.com/fsnUQ7b.png" onclick="liked()">
+      <input type="submit" name="other-post-button" value="Comment">
+      <input type="submit" name="other-post-button" value="Share">
+        </div>
+    </div>
+      <input type="comment" placeholder="Write a comment...">
+      <input type="submit" name="submit-comment" value="Submit"> 
+  </div>
+
+  <!--Post 2-->
+  <div style="left:475px; top:-870px;position:relative;">
+    <div class = "box2">
+      <div class = "iframe">
+        <iframe width="600" height="338" src="https://www.youtube.com/embed/A2EE_xHkbpA" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <b> My Academy Problems</b> cr. <greentext2>Peth Patcharapon</greentext2><br>
+      <div class="all-post-button" >
+        <input type="image" name="like" value="Like" src="http://i.imgur.com/fsnUQ7b.png" onclick="liked()">
+        <input type="submit" name="other-post-button" value="Comment">
+        <input type="submit" name="other-post-button" value="Share">
+      </div> 
+    </div>
+    <div class = "comment1">
+      <input type="comment" placeholder="Write a comment...">
+      <input type="submit" name="submit-comment" value="Submit"> 
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
